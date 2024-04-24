@@ -1,0 +1,307 @@
+.table-body-style .table-column{
+    position: relative;
+    background-image: url(../images/paper.jpg);
+    background-size: cover;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 1);
+	color:black;
+	transition: all 0.5;
+}
+/*../images/paper.jpg*/
+.table-column:nth-child(1){
+    width: 70%;
+}
+.table-column:nth-child(2){
+	cursor: pointer;
+    width: 15%;
+}
+.table-column:nth-child(3){
+    width: 15%;
+}
+
+.textarea-style{
+    height: 93%;
+    overflow-y: scroll;
+}
+
+.b1{
+    left:10px;
+}
+.b2{
+    right:50%
+}
+.b3{
+    right:42%;
+}
+.b4{
+    right:10px;
+}
+.b5{
+    right:20%;
+}
+
+.edit-form{
+    position: absolute;
+    right:26%;
+    width: 60px;
+    height: 100%;
+    overflow-wrap: no-wrap;
+}
+
+.pop-up-layout-profile{
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-3d-card{
+    background-color: #FFECCC;
+    background-image: url(../images/profileCard.jpg);
+    background-size:cover;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: 250px;
+    margin: 10% auto;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.683);
+    animation: cardRotate 0.5s ease-in-out 1;
+    animation-fill-mode: both;
+    transform-origin: 50% 50%;
+    scale:0 1;
+}
+
+@keyframes cardRotate{
+	100%{
+		scale:1 1;
+	}
+}
+
+.nav-div-style{
+    box-shadow: inset 1px 1px 1px 0.7px rgba(0, 0, 0, 0.363);
+    padding:0px 8px;
+    height:20px;
+    line-height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+
+.profile-wrap{
+    height: 100%;
+    width: 40%;            
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-icon{
+    margin-top:35px;
+    background-image: url(../images/profile.svg);
+    background-size:cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: inset 1px 1px 5px 0.5px black;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.profile-name{
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.phone-number{
+    margin-top: 10px;
+    width: 150px;
+    font-size: 15px;
+}
+
+
+.certification-wrap{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+
+}
+
+.profile-email{
+    width: 170px;
+    font-size: 12px;
+}
+
+.profile-introduce{
+    box-shadow: inset 4px 4px 4px 1px rgba(0, 0, 0, 0.389);
+    margin-top: 30px;
+    font-size: 13px;
+    width: 220px;
+    height: 130px;
+    margin-bottom: 15px;
+}
+.profile-detail-wrap{
+    display: flex;
+    gap:5px;
+}
+.profile-detail{
+    width: 50px;
+    color:black;
+    border-radius: 3px;
+}
+.profile-detail{
+    border: 1px solid #0F5608;
+}
+
+
+
+.pop-up-layout-delete{
+    display: none;
+    user-select: none;
+    z-index: 100;
+    box-sizing: border-box;
+    position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+    transition: all 0.4s linear;
+    animation: message 1s linear 1;
+    animation-fill-mode: both;
+}
+
+@keyframes message{
+
+    100%{
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+}
+
+
+
+.delete-3d-card{
+    position: relative;
+    text-align: center;
+    background-color: #ffffffa9;
+    width: 300px;
+    height: 80px;
+    margin: 70% auto 0 auto;
+    font-size: 20px;
+    animation-fill-mode: both;
+    transform-origin: 50% 50%;
+    box-shadow: 4px 4px 8px 1px #0000008a;
+    transform: translateY(200px);
+    animation: messageSlide 1s ease-in-out 1;
+    animation-fill-mode: both;
+    border-radius: 10px;
+}
+
+@keyframes messageSlide{
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.delete-message{
+    color: black;
+    line-height: 40px;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.delete-button{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #0b4606;
+    color:#FFECCC;
+    border:0px solid black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.384);
+    border-radius: 10px;
+}
+
+.delete-button:hover{
+    animation: bound 1s ease-in-out 1;
+    animation-fill-mode: both;
+}
+
+
+@keyframes bound{
+    25%{transform: translateY(-3px);}
+    50%{transform: translateY(0px);}
+    75%{transform: translateY(-1px);}
+}
+
+.delete-button:nth-child(3){
+    right:10px;
+}
+
+.delete-form{
+    position: absolute;
+    left:10px;
+    width: 0px;
+    height: 30px;
+}
+
+a:link{
+    color:black;
+}
+
+a:active{
+	color:black;
+}
+a{
+    color:black;
+    display: inline-block;
+    line-height: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+iframe{
+    margin-top: 40px;
+    border: none;
+}
+
+
+
+.pop-up-layout-comment{
+    display: none;
+    user-select: none;
+    z-index: 100;
+    box-sizing: border-box;
+    position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+    transition: all 0.4s linear;
+    animation: message 1s linear 1;
+    animation-fill-mode: both;
+}
+
+.comment-3d-card{
+    position: relative;
+    text-align: center;
+    background-color: #ffffff9a;
+    width: 750px;
+    height: 580px;
+    margin: 20% auto 0 auto;
+    padding: 0px 0px 10px 0px;
+    font-size: 20px;
+    animation-fill-mode: both;
+    transform-origin: 50% 50%;
+    box-shadow: 4px 4px 8px 1px #0000008a;
+    transform: translateY(800px);
+    animation: messageSlide 1s ease-in-out 1;
+    animation-fill-mode: both;
+    border-radius: 10px;
+}

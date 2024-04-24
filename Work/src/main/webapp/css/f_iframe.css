@@ -1,0 +1,316 @@
+/*****************************Default Element*****************************/
+body{
+    margin: 0px;
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+.header-wrap{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.header{
+    position: relative;
+    height: 100px; width: 100%;
+    border:5px double #0a3a05;
+    border-style:double none;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 5px;
+    color: #c4c3ca;
+    font-size: 50px;
+    line-height: 90px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.683);
+    background-image: url(../images/bulletin.jpg);
+}
+
+.browser{
+    width: 100%;
+    margin-top: 2px;
+    overflow-y: scroll;
+    position: absolute;
+    height: 560px;
+    top: 152px;
+}
+
+.browser::-webkit-scrollbar {
+    display: none;
+}
+
+.paging-style{
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    bottom: 0;
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    position: fixed;
+    border:5px double #0a3a05;
+    border-style:double none;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url(../images/bulletin.jpg);
+}
+/*****************************table Element*****************************/
+
+.table-style{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    height: 30px;
+    color: #c4c3ca;
+    text-align: center;
+}
+
+.table-header-style{
+    color: #FFECCC;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 35px;
+    height: 35px;
+}
+
+.table-header-style .table-column{
+    background-color: #0F5608;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 1);
+}
+
+.table-body-style{
+    margin-bottom: 5px;
+    height: 30px;
+    line-height: 30px;
+    color: #a09fa4;
+}
+
+.browser > a:nth-child(2n) > .table-body-style .table-column{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 1);
+}
+
+.browser > a:nth-child(2n):hover > .table-body-style .table-column{
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 1);
+}
+
+.browser > a:nth-child(2n-1) > .table-body-style .table-column{
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 1);
+}
+
+.browser > a:nth-child(2n-1):hover > .table-body-style .table-column{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 1);
+}
+
+.table-body-style:hover .table-column{
+    transition: all 200ms linear;
+    background-color: rgba(255, 255, 255, 0.474);
+}
+/*****************************table Element*****************************/
+.table-column:nth-child(1){
+    width: 82%;
+}
+.table-column:nth-child(2){
+    width: 18%;
+}
+
+/*****************************Editor Palette Element*****************************/
+.file-browser{
+    position: absolute;
+    right:0;
+    width: 18%;
+    height: 93%;
+    background-image: url(../images/paper.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upload-button{
+    box-sizing: border-box;
+    height: 6%;
+    background-color: #00000085;
+    font-size: 15px;
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 3%;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.683);
+}
+
+
+.upload-browser{
+    box-sizing: border-box;
+    height: 90%;
+    overflow: hidden;
+    overflow: scroll;
+    text-align: center;
+}
+
+.upload-browser::-webkit-scrollbar{
+    display: none;
+}
+
+
+.upload-item{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 30%;
+}
+
+.upload-item:last-child{
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 30%;
+}
+
+#fileName{
+    display: none;
+}
+
+.editor-style{
+    box-sizing: border-box;
+    width: 81.4%;
+    height: 6%;
+    color:black;
+    font-size: 18px;
+    background-image: url(../images/paper.jpg);
+    background-size: cover;
+    padding: 0px 10px ;
+}
+
+.editor-style:focus{
+    outline: none;
+}
+
+.textarea-style{
+    height: 87%;
+    overflow-y: scroll;
+}
+
+.palette-style{
+    display: flex;
+    gap:5px;
+}
+
+.textarea-style::-webkit-scrollbar {
+    display: "";
+    width: 10px;
+}
+
+.textarea-style::-webkit-scrollbar-thumb {
+    background-color: rgb(177, 177, 177);
+    outline: none;
+}
+
+.palette-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin:auto 0px;
+    border: none;
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+}
+
+.palette-color{
+    box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.683);
+    font-size: 0px;
+}
+
+.palette-font-decoration{
+    box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.683);
+}
+
+.palette-color:nth-child(1){
+    background-color: red;
+}
+.palette-color:nth-child(2){
+    background-color: yellow;
+}
+.palette-color:nth-child(3){
+    background-color: green;
+}
+.palette-color:nth-child(4){
+    background-color: blue;
+}
+
+.palette-color:nth-child(5){
+    background-color: white;
+}
+.palette-color:nth-child(6){
+    background-color: black;
+}
+.palette-color:nth-child(7){
+    background-color: black;
+}
+.palette-color-select{
+    height: 30px;
+    width: 30px;
+}
+
+
+/*****************************Input Element*****************************/
+.input-box-style {
+    position: absolute;
+    color: black; font-size: 15px;
+    text-align: center; line-height: 22px; letter-spacing: 1px;
+    height: 100%;
+    width: 100%;
+    top:-5px;
+    right: 0;
+    border: none;
+    outline: none;
+    background-color: rgba(245, 245, 245, 0);
+    margin-top: 4px;
+}
+
+/*****************************button Element*****************************/
+.button-box-style{
+    top:5px;
+    position: absolute;
+    height: 80%;
+    color: black; font-size: 16px;
+    text-align: center; line-height: 22px; letter-spacing: 1px;
+    background-color: rgba(245, 245, 245, 0.45);
+    font-weight: bold;
+}
+/*****************************select Element*****************************/
+.select-style{
+    position: absolute;
+    border: none;
+    top:7px;
+    margin-right: 8px;
+    right: 210px;
+    height: 70%;
+    width: 100px;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.45);
+    color: black; font-size: 16px;
+    font-weight: bold;
+}
+
+.paging{
+	position: absolute;
+	width: 300px;
+	height: 70%;
+	background-color: rgba(245, 245, 245, 0.45);
+}
+
+.select-style:focus{
+    outline: none;
+
+}

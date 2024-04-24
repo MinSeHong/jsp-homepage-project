@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+@import url('https://fonts.cdnfonts.com/css/dot');
+/*****************************Default Element*****************************/
+body{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif; color: black;
+    margin: 0px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar-track{
+	display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+
+a{
+    text-decoration: none; color: #c4c3ca;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 200ms linear;
+    user-select: none;
+}
+
+.link:hover{
+    animation: linkhover 0.5s linear infinite alternate-reverse;
+    
+}
+
+h4{
+    margin-top: 20px;
+    font-size: 40px; font-weight: 600;
+    color:#c4c3ca;
+    text-shadow: 4px 4px 2px black;
+    user-select: none;
+}
+
+
+@keyframes linkhover{
+    from{opacity: 1;}
+    to{opacity: 0;color: #ffeba7;}
+}
+
+/*****************************Rotate Checkbox*****************************/
+.container{
+    text-align: center; margin:auto;
+    position: relative; top:150px;
+    width:500px;
+}
+
+.checkbox[type="checkbox"]:checked,
+.checkbox[type="checkbox"]:not(:checked){
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+    display: block;
+    position: relative; width: 60px; height: 16px;
+    background-color: white; margin:0px auto 30px auto;
+    
+    box-shadow: 0px 0px 5px 2px black;
+    
+    cursor: pointer;
+    text-align: center;
+}
+
+.checkbox:checked + label:before,
+.checkbox:not(:checked) + label:before{
+    position: absolute; display: block;
+    width: 30px; height: 30px;
+    top: -7px; left: -7px; z-index: 20;
+    background-color: #4B4A54;
+    box-shadow: 0px 0px 2px 2px black;
+
+    content: ' ';
+    text-align: center; font-size: 24px; line-height: 36px;
+
+    transition: all 0.5s ease;
+}
+
+.checkbox:checked + label:before {
+    transform: translateX(44px) rotate(-270deg);
+}
+.checkbox:checked ~ .card-wrap .card-wrapper {
+    transform: rotateY(180deg);
+}
+
+/*****************************Login Wrap*****************************/
+.card-wrap {
+    scale:1 0;
+    margin-top: 4cqh; margin: auto;
+    position: relative; width: 440px; max-width: 100%; height: 400px;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    animation: animation-pop-up ease-in-out 0.4s 1;
+    animation-fill-mode: both;
+}
+
+@keyframes animation-pop-up{
+    to{ 
+        scale:1;
+    }
+}
+
+.card-wrapper {
+    top: 0; left: 0; 
+    width: 100%; height: 100%;
+    position:relative;    
+    transform-style: preserve-3d;
+    transition: all 600ms ease-out; 
+}
+
+.card-front, .card-back {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+    width: 100%; height: 100%;
+    position: absolute;
+    margin: auto;
+    background-color: #000000a2;
+    box-shadow: 5px 5px 10px 2px black;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+
+/****************************************************************************/
+
+.entry-wrap{
+    top:20%; position: absolute;
+    width: 100%; height: 80%;
+    overflow-y:auto;
+}
+
+.entry-wrap::-webkit-scrollbar {
+    width: 10px;
+}
+
+.entry-wrap::-webkit-scrollbar-thumb {
+    background-color: rgb(177, 177, 177);
+    outline: none;
+    box-shadow:0px 0px 5px 1px black;
+}
+
+.input-box-style {
+    color: white; font-size: 13px; font-weight:bolder;
+    text-align: center; line-height: 22px; letter-spacing: 1px;
+    padding: 7px 10px; margin-bottom: 10px;
+    height: 25px; width: 70%;
+    border: 1px solid black; outline: none;
+    background-color: black;
+    transition: all 600ms linear;
+}
+
+.entry-text{
+    color:#DBA053;
+    text-shadow: 4px 2px 2px black;
+    margin: 15px 0px 5px 0px;
+    user-select: none;
+}
+
+.entry-text.span{
+    text-shadow: 4px 4px 4px black;
+    color:#c4c3ca;
+    font-weight: bolder;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.input-box-style:focus {
+    border: 1px solid rgb(135, 135, 135);
+}
+
+.input-box-birthday{
+    width: 60px;
+    margin: 0px 10px;
+}
+
+.input-box-name{
+    width: 140px;
+    margin: 0px 10px;
+}
+
+.input-radio-style {
+    margin: 10px;
+    scale: 1.7;
+}
+
+.input-radio-style[type='radio']:not(:checked):after{
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    border: 1px solid white;
+    visibility: visible;
+}
+
+.input-radio-style[type='radio']:checked:after{
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    border: 1px solid black;
+    visibility: visible;
+}
+
+.input-checkbox-style {
+    border-radius: 0px;
+    background-color: black;
+    margin: 10px;
+    scale: 1.7;
+}
+
+.input-checkbox-style[type='checkbox']:not(:checked):after{
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    position: relative;
+    background-color: black;
+    content: '';
+    display: inline-block;
+    border: 1px solid white;
+    visibility: visible;
+}
+
+.input-checkbox-style[type='checkbox']:checked:after{
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    position: relative;
+    background-color: white;
+    font-family: 'Dot', sans-serif;
+    content: '';
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+    visibility: visible;
+}
+
+.select-style{
+    border: none;
+    width: 70%;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    color:#c4c3ca
+}
+
+.button{  
+    height: 44px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    margin: 15px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    background-color: #0F5608;
+    color: #FFECCC;
+}
+
+.button:hover{
+    filter: blur(0.5);
+    box-shadow: 0px 0px 5px 1px white;
+}
+
+.card-wrapper:hover{
+    animation: bound 0.5s ease-in-out 1;
+    animation-fill-mode: both;
+}
+
+@keyframes bound{
+    50%{scale: 1.01;}
+    100%{scale: 1;}
+}
+
+
+
+.error-screen{
+    user-select: none;
+    z-index: 50;
+    box-sizing: border-box;
+    position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.4s linear;
+    animation: errorPop 3s linear 1;
+    animation-fill-mode: both;
+}
+
+
+.error-container{
+    position: relative;
+    text-align: center;
+    background-color: #ffffffa9;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    margin: 18% auto 0 auto;
+    color:rgb(255, 0, 0);
+    font-size: 20px;
+    animation-fill-mode: both;
+    transform-origin: 50% 50%;
+    animation: errorMessage 3s linear 1;
+    box-shadow: 0px 0px 8px 2px rgb(0, 0, 0);
+}
+
+@keyframes errorPop{
+    0%{
+		display:block;
+    }
+    50%{background-color: rgba(0, 0, 0, 0.4);}
+    
+    100%{
+		background-color:rgba(0, 0, 0, 0);
+        display:none;
+    }
+}
+
+@keyframes errorMessage{
+    0%{
+		display:block;
+        scale:1 0;
+    }
+    30%{scale:1 1;}
+    70%{scale:1 1;}
+    100%{
+        scale:1 0;
+        display:none;
+    }
+}
+
+#clock{
+	text-align: center;
+	margin:auto;
+	margin-top:180px;
+    font-size: 100px; color:#FFECCC; font-family: 'Dot', sans-serif; opacity: 0.7;
+    text-shadow: 4px 4px 2px black;
+    user-select: none;
+}
+

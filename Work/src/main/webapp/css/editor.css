@@ -1,0 +1,102 @@
+.pop-up-layout-reset{
+    display: none;
+    user-select: none;
+    z-index: 50;
+    box-sizing: border-box;
+    position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+    transition: all 0.4s linear;
+    animation: message 1s linear 1;
+    animation-fill-mode: both;
+}
+
+@keyframes message{
+
+    100%{
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+}
+
+
+
+.reset-3d-card{
+    position: relative;
+    text-align: center;
+    background-color: #ffffffa9;
+    width: 300px;
+    height: 80px;
+    margin: 70% auto 0 auto;
+    font-size: 20px;
+    animation-fill-mode: both;
+    transform-origin: 50% 50%;
+    box-shadow: 4px 4px 8px 1px #0000008a;
+    transform: translateY(200px);
+    animation: messageSlide 1s ease-in-out 1;
+    animation-fill-mode: both;
+    border-radius: 10px;
+}
+
+@keyframes messageSlide{
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.reset-message{
+    color: black;
+    line-height: 40px;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.reset-button{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #0b4606;
+    color:#FFECCC;
+    border:0px solid black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.384);
+    border-radius: 10px;
+}
+
+.reset-button:hover{
+    animation: bound 1s ease-in-out 1;
+    animation-fill-mode: both;
+}
+
+
+@keyframes bound{
+    25%{transform: translateY(-3px);}
+    50%{transform: translateY(0px);}
+    75%{transform: translateY(-1px);}
+}
+
+.reset-button:nth-child(2){
+    left:10px;
+}
+
+.reset-button:nth-child(3){
+    right:10px;
+}
+a:link{
+    color:black;
+}
+
+a:visited{
+    color:black;
+}
+
+a:active{
+	color:black;
+}
+
+a{
+    display: inline-block;
+    line-height: 30px;
+    height: 100%;
+    width: 100%;
+}
