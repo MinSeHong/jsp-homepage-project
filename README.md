@@ -4,13 +4,9 @@
   <img src= "https://capsule-render.vercel.app/api?type=soft&color=auto&text=Jsp%20Homepage%20Project&fontSize=50&animation=twinkling"/>
 </p>
 
-*****
 
 <h3 align='center'>
-  SKILL STACKS <br/><br/>
-  <a href="https://github.com/MinSeHong/jsp-homepage-project">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MinSeHong" alt="Top Langs" />
-  </a>
+  SKILL STACKS <br/>
 </h3>
 <p align='center'>
   <img src="https://img.shields.io/badge/eclipse-2C4AA8?style=for-the-badge&logo=eclipseide&logoColor=white"/>
