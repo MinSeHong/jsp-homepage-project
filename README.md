@@ -3,8 +3,14 @@
 <p align='center'>
   <img src= "https://capsule-render.vercel.app/api?type=soft&color=auto&text=Jsp%20Homepage%20Project&fontSize=50&animation=twinkling"/>
 </p>
+
+*****
+
 <h3 align='center'>
-  SKILL STACKS
+  SKILL STACKS <br/><br/>
+  <a href="https://github.com/MinSeHong/jsp-homepage-project">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MinSeHong" alt="Top Langs" />
+  </a>
 </h3>
 <p align='center'>
   <img src="https://img.shields.io/badge/eclipse-2C4AA8?style=for-the-badge&logo=eclipseide&logoColor=white"/>
@@ -38,32 +44,29 @@
 <br/>
 
 ## 실행방법
-1. 이클립스 실행한 후 "Work" 폴더를 현재 디렉토리로 지정합니다.
+> 이클립스 실행한 후 "Work" 폴더를 현재 디렉토리로 지정합니다.
    
-3. "tomcat-config"로 Tomact Sever를 구축합니다. 톰캣 버젼은 10.1입니다.
+> "tomcat-config"로 Tomact Sever를 구축합니다. 톰캣 버젼은 10.1입니다.
    
-5. 데이터베이스는 Oracle을 이용해 저장합니다.
-    1. Oracle은 CDB를 사용하고 아이디 "JSP" 비밀번호 "JSP"로 생성해야합니다.
-       
-    3. 생성을 위한 파일은 oracle.sql 입니다.
-       
-    5. Oracle을 이용한 DB를 생성하지 않을 시, 프로젝트는 작동하지 않습니다.
+> 데이터베이스는 Oracle을 이용해 저장합니다.
+>>Oracle은 CDB를 사용하고 아이디 "JSP" 비밀번호 "JSP"로 생성해야합니다.<br/>
+>>생성을 위한 파일은 oracle.sql 입니다.<br/>
+>>Oracle을 이용한 DB를 생성하지 않을 시, 프로젝트는 작동하지 않습니다.<br/>
 
 <br/>
 
 ## 주요 기능
-1. 회원관련 기능
-    1. 회원가입 및 탈퇴 구현
+>회원관련 기능
+>>회원가입 및 탈퇴 구현<br/>
+>>회원 정보 수정<br/>
        
-    3. 회원 정보 수정
-       
-2. 게시글 페이지
-    1. 게시글 CRUD 기능
-       
-    3. 게시글 이미지 첨부 및 다운로드 기능
+>게시글 페이지
+>>게시글 CRUD 기능<br/>
+>>게시글 이미지 첨부 및 다운로드 기능<br/>
 
-3. WEB SOCKET
-    1. 웹 소켓을 이용한 실시간 채팅기능
+>WEB SOCKET
+>>웹 소켓을 이용한 실시간 채팅기능<br/>
+
 *****
 
 <br/>
